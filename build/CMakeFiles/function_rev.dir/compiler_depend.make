@@ -154,7 +154,8 @@ CMakeFiles/function_rev.dir/main.cpp.obj: ../main.cpp \
   ../string_add.cc \
   ../reference_ret.cc \
   ../return_vector.cc \
-  ../fact_recur.cc
+  ../fact_recur.cc \
+  ../retPointer.cc
 
 
 ../max.cc:
@@ -464,3 +465,5 @@ D:/mingw/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h
 ../string_add.cc:
 
 ../return_vector.cc:
+
+../retPointer.cc:

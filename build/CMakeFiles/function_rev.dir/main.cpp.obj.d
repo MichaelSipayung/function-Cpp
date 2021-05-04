@@ -143,4 +143,4 @@ CMakeFiles/function_rev.dir/main.cpp.obj: D:\c_project\function\main.cpp \
  D:\c_project\function\sum.cc D:\c_project\function\string_add.cc \
  D:\c_project\function\reference_ret.cc \
  D:\c_project\function\return_vector.cc \
- D:\c_project\function\fact_recur.cc
+ D:\c_project\function\fact_recur.cc D:\c_project\function\retPointer.cc

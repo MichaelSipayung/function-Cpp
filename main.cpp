@@ -21,6 +21,7 @@
 #include "return_vector.cc"
 #include <cstdlib>
 #include "fact_recur.cc"
+#include "retPointer.cc"
 
 int main(int, char**) {
     
@@ -186,7 +187,6 @@ int main(int, char**) {
     }
 
     std::cout<<"fact 5! \t: " <<fact_rec(5)  <<std::endl<<"call by recursive method " <<std::endl;
-    
 
 
 }
