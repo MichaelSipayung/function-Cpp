@@ -24,7 +24,7 @@
 #include "retPointer.cc"
 #include "overload_f.cc"
 #include "default_arg.cc"
-
+#include "inline.cc"
 
 int main(int, char**) {
     
@@ -199,7 +199,7 @@ int main(int, char**) {
     std::string collectScreen=screen();
     std::cout<<"call default argument \t: "<< collectScreen<<std::endl;
 
-
+    
 
 }
 
