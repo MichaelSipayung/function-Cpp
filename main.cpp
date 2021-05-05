@@ -22,6 +22,9 @@
 #include <cstdlib>
 #include "fact_recur.cc"
 #include "retPointer.cc"
+#include "overload_f.cc"
+#include "default_arg.cc"
+
 
 int main(int, char**) {
     
@@ -187,6 +190,15 @@ int main(int, char**) {
     }
 
     std::cout<<"fact 5! \t: " <<fact_rec(5)  <<std::endl<<"call by recursive method " <<std::endl;
+
+    std::string dataName("michael");
+    std::cout<<" Find value \t: "  <<record(dataName)<<std::endl;
+    
+    collectData();
+    collectData(67);
+    std::string collectScreen=screen();
+    std::cout<<"call default argument \t: "<< collectScreen<<std::endl;
+
 
 
 }
