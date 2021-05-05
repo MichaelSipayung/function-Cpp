@@ -25,6 +25,10 @@
 #include "overload_f.cc"
 #include "default_arg.cc"
 #include "inline.cc"
+#include "consexpr.cc"
+#include "inline_head.hpp"
+#include <cassert>
+
 
 int main(int, char**) {
     
@@ -199,9 +203,31 @@ int main(int, char**) {
     std::string collectScreen=screen();
     std::cout<<"call default argument \t: "<< collectScreen<<std::endl;
 
-    
+    auto testShort=&shorterStringma("michael","sipayung");
+    std::cout<<"test inline function \t: " << *testShort<<std::endl;
+
+    //inline function
+    std::cout<<"find the small number \t: " << smaller(12,78)<<std::endl;
+    //constexpr function
+    std::cout<<"using consexpr \t: " <<new_sz()<<std::endl;
+    std::cout<<"  inline function should be define in header files \t: " <<lastMessage(13)<<std::endl;
+
+    //debugging code 
+    std::string testDebug="michael";
+    auto threshold=8;
+   // std::cout<<"1.test past "<<std::endl;
+    //assert(testDebug.size()>threshold);
+    if(testDebug.size()<threshold){
+        std::cerr<<"1.error \t: " <<__FILE__ <<std::endl<<"2.in line \t: " <<__LINE__<<std::endl<<"3.date \t: " <<__DATE__<<std::endl;
+    }
+    std::cout<<" test programm after produce error "<<std::endl;
 
 }
 
+void printDebug(const int ia[],size_t size){
 
+    #ifndef NDEBUG
+    std::cerr<<smaller(12,43)<<" array size is "<<size<<std::endl;
+    #endif
+}
 
